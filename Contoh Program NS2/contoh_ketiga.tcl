@@ -34,6 +34,12 @@ $ns duplex-link $n2 $n3 5Mb 10ms DropTail
 $ns simplex-link $n3 $n4 0.5Mb 15ms DropTail
 $ns queue-limit $n2 $n3 4
 
+#Give node position (for NAM)
+$ns duplex-link-op $n0 $n2 orient left-up
+$ns duplex-link-op $n1 $n2 orient left-down
+$ns duplex-link-op $n2 $n4 orient right
+$ns duplex-link-op $n2 $n3 orient right-down
+
 # Create a UDP flow from n0 to n3
 set udp [new Agent/UDP]
 $ns attach-agent $n0 $udp
