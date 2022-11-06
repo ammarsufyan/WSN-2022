@@ -15,12 +15,12 @@ set nf [open out.nam w]
 $ns namtrace-all $nf
 
 $node1 label "node 1"
-$node1 label "node 2"
-$node1 label "node 3"
-$node1 label "node 4"
-$node1 label "node 5"
-$node1 label "node 6"
-$node1 label "node 7"
+$node2 label "node 2"
+$node3 label "node 3"
+$node4 label "node 4"
+$node5 label "node 5"
+$node6 label "node 6"
+$node7 label "node 7"
 $node1 label-color blue
 $node2 label-color red
 $node3 label-color red
